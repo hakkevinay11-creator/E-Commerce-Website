@@ -1,0 +1,346 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 100px;
+  width: 100%;
+  /* background-image: linear-gradient(45deg,#efefef 25%,rgba(239,239,239,0) 25%,rgba(239,239,239,0) 75%,#efefef 75%,#efefef),linear-gradient(45deg,#efefef 25%,rgba(239,239,239,0) 25%,rgba(239,239,239,0) 75%,#efefef 75%,#efefef);
+*/
+  background-color: black;
+  background-size: 50px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Location and Address CSS */
+.location {
+  color: white;
+  margin-left: 15px;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+.location i {
+  margin-right: 8px;
+  font-size: 25px;
+}
+
+.location p {
+  display: inline;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 25px;
+  text-transform: none;
+  margin-bottom: 0px;
+}
+
+.address {
+  color: white;
+  margin-left: 5px;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+.address p {
+  display: inline;
+  font-size: 13px;
+  font-weight: 900;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+/* Search Bar CSS */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+
+  margin-left: 100px;
+}
+
+.search-bar i {
+  color: black;
+  cursor: pointer;
+  background-color: brown;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.search-bar i:hover {
+  background-color: darkred;
+  color: white;
+}
+
+.search-bar input {
+  height: 40px;
+  width: 600px;
+
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: none;
+}
+.signin {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+.signin i {
+  margin-right: 8px;
+  font-size: 25px;
+  color:lightblue;
+}
+.cart {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+  color:lightblue;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+.account {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+.account i {
+  margin-right: 8px;
+  font-size: 25px;
+  color: lightblue;
+}
+.search-bar:hover input {
+  /*box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);*/
+  box-shadow: 0 0 15px 4px rgba(0, 123, 255, 0.9);
+
+  background: yellow !important;
+}
+
+.search-bar input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+}
+
+.search-bar input,
+.search-bar i {
+  transition: all 0.3s ease;
+}
+
+
+/*main content to avoid overlap with navbar*/
+.main{
+    height: 100vh;
+   background-color: lightgray;
+
+  background-size: cover;
+  padding-top: 120px;
+  margin-top: 100px;
+  text-align: center;
+  align-items: center;
+
+}
+.main button{
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: brown;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*.container {
+  height: 100vh;
+   background-color: lightgray;
+ background-image: url(item1.jpg);
+  background-size: cover;
+  padding-top: 120px;
+  margin-top: 100px;
+  text-align: center;
+  align-items: center;
+}*/
+.container .item{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  background-size: cover;
+
+}
+
+.container .item1 {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  background-size: cover;
+
+}
+.container .item2{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  background-size: cover;
+
+
+}
+.container .item3 {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  background-size: cover;
+
+}
+.container .item4 {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  background-size: cover;
+
+}
+.container .item5 {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  background-size: cover;
+
+}
+/*.container1 {
+
+  height: 100vh;
+   background-color: lightgray;
+ background-image: url(item1.jpg);
+  background-size: cover;
+  padding-top: 120px;
+  margin-top: 100px;
+  text-align: center;
+  align-items: center;
+}*/
+.container1 .product1{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  background-size: cover;
+  
+
+}
+
+.container1 .product2{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  background-size: cover;
+  
+
+}
+.container1 .product3{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  background-size: cover;
+
+
+}
+.container1 .product4{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  background-size: cover;
+
+}
+.container1 .product5{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  background-size: cover;
+
+}
+.container1 .product6{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  background-size: cover;
+
+}
+footer{
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}

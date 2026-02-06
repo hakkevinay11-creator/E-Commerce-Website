@@ -1,0 +1,52 @@
+*{
+    text-align: center;
+    padding: 0%;
+margin:0%;
+}
+h1{
+  color: aqua;
+}
+body{
+    height: 100vh;
+background-image:url("5073198.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+}
+.box{
+height: 500px;
+width: 350px;
+display :flex ;
+justify-content:center;
+align-items: center;
+
+
+
+}
+.form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
